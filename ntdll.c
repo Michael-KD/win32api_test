@@ -27,7 +27,9 @@ LPVOID rBuffer;
 HANDLE hThread;
 HANDLE hProcess;
 
-wchar_t dllPath[] = L"C:\\Users\\micha\\Desktop\\Code\\win32api_test\\dllExample.dll";
+wchar_t dllPath[] = L"C:\\Users\\micha\\OneDrive\\Desktop\\win32\\win32api_test\\dllExample.dll";
+//C:\\Users\\micha\\Desktop\\Code\\win32api_test\\dllExample.dll
+
 int dllSize = sizeof(dllPath) + 1; // account for null-terminator
 
 int main(int argc, char* argv[]) {

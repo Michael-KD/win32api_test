@@ -7,7 +7,9 @@ char er[4] = "(-)";
 
 PVOID rBuffer;
 HANDLE hProcess;
-wchar_t dllLocation[MAX_PATH] = L"C:\\Users\\micha\\Desktop\\Code\\win32api_test\\dllExample.dll";
+wchar_t dllLocation[MAX_PATH] = L"C:\\Users\\micha\\OneDrive\\Desktop\\win32\\win32api_test\\dllExample.dll";
+//C:\\Users\\micha\\Desktop\\Code\\win32api_test\\dllExample.dll
+
 size_t dllPath = sizeof(dllLocation);
 
 int main(int argc, char* argv[]) {
