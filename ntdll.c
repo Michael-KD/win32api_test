@@ -35,7 +35,7 @@ int dllSize = sizeof(dllPath) + 1; // account for null-terminator
 int main(int argc, char* argv[]) {
 
     if (argv[1] == NULL) {
-        printf("%s usage: ntdllinjection.exe <pid>\n", er);
+        printf("%s usage: ntdll.exe <pid>\n", er);
         return EXIT_FAILURE;
     }
 
@@ -47,11 +47,11 @@ int main(int argc, char* argv[]) {
     );
 
     if (!hProcess) {
-        printf("%s couldn't create a handle to process (%d), error = %ld\n", er, PID, GetLastError());
+        printf("%s couldn't create a handle to process (%lu), error = %ld\n", er, PID, GetLastError());
         return EXIT_FAILURE;
     }
 
-    printf("%s created a handle to process (%d)\n", ok, PID);
+    printf("%s created a handle to process (%lu)\n", ok, PID);
     printf("%s DLL path: '%S'\n", ok, dllPath);
 
     HMODULE hKernel32 = GetModuleHandleW(L"Kernel32");
